@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caballos — Guía básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset ligero */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.4;color:#222}
+
+    /* Diseño */
+    header{background:linear-gradient(120deg,#7bdff6 0%,#6bbfda 60%);color:#fff;padding:3rem 1rem;text-align:center}
+    .container{max-width:1000px;margin:0 auto;padding:1.25rem}
+    h1{font-size:2.25rem;margin-bottom:.25rem}
+    p.lead{opacity:.95;margin-bottom:1rem}
+
+    /* Tarjetas */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1.25rem}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,30,.08);overflow:hidden;display:flex;flex-direction:column}
+    .card img{width:100%;height:160px;object-fit:cover}
+    .card .card-body{padding:1rem;flex:1}
+    .card h3{margin-bottom:.5rem;font-size:1.1rem}
+    .card p{font-size:.95rem;color:#444}
+
+    /* Galería */
+    .gallery{display:flex;gap:.5rem;margin-top:1rem}
+    .gallery img{flex:1;height:140px;object-fit:cover;border-radius:8px}
+
+    /* Botones */
+    .btn{display:inline-block;background:#2d6a4f;color:#fff;padding:.6rem .9rem;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn:hover{transform:translateY(-2px)}
+
+    footer{margin-top:2rem;padding:1rem 0;text-align:center;color:#666;font-size:.9rem}
+
+    /* Responsive tweaks */
+    @media (max-width:420px){h1{font-size:1.5rem}.card img{height:120px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Caballos</h1>
+      <p class="lead">Un vistazo básico al mundo de los caballos: razas, cuidados y curiosidades para amantes y curiosos.</p>
+      <a class="btn" href="#razas">Conoce las razas</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="introduccion">
+      <h2 style="margin-top:1rem;">Introducción</h2>
+      <p style="margin-top:.5rem;">El caballo (<em>Equus ferus caballus</em>) es un mamífero perisodáctilo domesticado que ha acompañado al ser humano durante miles de años. Son animales sociales, inteligentes y de gran fuerza y resistencia.</p>
+    </section>
+
+    <section id="razas">
+      <h2 style="margin-top:1rem;">Razas populares</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1470167290877-7d2b91a3f2a7?auto=format&fit=crop&w=1200&q=60" alt="Caballo árabe">
+          <div class="card-body">
+            <h3>Árabe</h3>
+            <p>Conocido por su elegancia, resistencia y cabeza refinada. Muy valorado en competencias de resistencia y eventos ecuestres.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500612318659-ff2ec0f6b7c8?auto=format&fit=crop&w=1200&q=60" alt="Pura sangre inglés">
+          <div class="card-body">
+            <h3>Pura Sangre Inglés</h3>
+            <p>Raza criada para velocidad y competición en carreras. Cuerpo atlético y gran capacidad de sprint.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=1200&q=60" alt="Percherón">
+          <div class="card-body">
+            <h3>Percherón</h3>
+            <p>Caballo de tiro francés, robusto y dócil. Muy usado históricamente para labores agrícolas y transporte pesado.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cuidados">
+      <h2 style="margin-top:1rem;">Cuidados básicos</h2>
+      <ul style="margin-top:.5rem;list-style:disc;padding-left:1.25rem;color:#333">
+        <li>Alimentación equilibrada: forraje de calidad y control de granos según la actividad.</li>
+        <li>Agua fresca y limpia disponible siempre.</li>
+        <li>Revisiones veterinarias y desparasitaciones regulares.</li>
+        <li>Cuidado de cascos y herrado por un especialista (herrador).</li>
+        <li>Ejercicio diario y acceso a pasto para su bienestar mental.</li>
+      </ul>
+    </section>
+
+    <section id="curiosidades">
+      <h2 style="margin-top:1rem;">Curiosidades</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=60" alt="Caballo corriendo">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=800&q=60" alt="Potro">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=800&q=60" alt="Caballo y jinete">
+      </div>
+      <p style="margin-top:.75rem;">Los caballos tienen una visión panorámica debido a la posición lateral de sus ojos, y pueden dormir tanto de pie como acostados. Además, poseen una memoria social notable: recuerdan a otros caballos y personas por largos periodos.</p>
+    </section>
+
+    <section id="contacto">
+      <h2 style="margin-top:1rem;">Contacto</h2>
+      <p style="margin-top:.5rem;">¿Quieres más información, una plantilla para imprimir o dividir esto en <code>index.html</code> y <code>styles.css</code>? <a class="btn" href="#">Dímelo</a></p>
+    </section>
+
+    <footer>
+      <p>Plantilla básica — diseñado para aprendizaje y demostraciones.</p>
+    </footer>
+  </main>
+</body>
+</html>
