@@ -1,4 +1,3 @@
-
 function load(id, file) {
   fetch(file)
   .then(res => res.text())
