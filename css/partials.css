@@ -12,58 +12,59 @@
   --primary: #5D3A1A;
   --primary-dark: #3A240F;
   --text-light: #ffffff;
-  --max-width: 1300px;
 }
 
-/* ================= HEADER ================= */
 
 header {
   background-color: var(--primary);
   width: 100%;
 }
 
+/* NAV flexible (NO vh) */
 nav {
-  max-width: var(--max-width);
   margin: 0 auto;
-  height: 80px;
+  min-height: 4.5rem;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* ================= MENU ================= */
+
 .menu {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: clamp(1rem, 2vw, 2.5rem);
 }
 
 .menu li:first-child img {
-  height: 48px;
+  height: 4.5rem;
+  width: auto;
   margin-right: 0.5rem;
 }
 
 .menu li {
-  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .menu a {
   display: flex;
   align-items: center;
-  height: 100%;
-  padding: 0 0.9rem;
+  padding: 0.75rem 0.9rem;
   color: var(--text-light);
   text-decoration: none;
-  font-size: 0.9rem;
-  white-space: nowrap;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
   position: relative;
+  white-space: nowrap;
 }
 
 .menu a::after {
   content: "";
   position: absolute;
-  bottom: 18px;
+  bottom: 0.4rem;
   left: 50%;
   width: 0;
   height: 2px;

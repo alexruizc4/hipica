@@ -256,3 +256,84 @@
 .modalidades .check{
     margin: 2vh 2vw;
 }
+
+.programa{
+    margin: 15vh auto;
+    height: auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 34% repeat(3,22%) ;
+    row-gap: 3vh;
+}
+
+.programa img{
+    grid-column: 2/3;
+    grid-row: 1/5;
+    height: 65vh;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.programa .primero  h2{
+    font-size: 2.5em;
+    margin: 2vh 0;
+}
+.programa .primero em{
+    color: #5D3A1A;
+}
+
+
+.programa .pasos{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 30% 60%;
+    height: 10vh;
+    gap: 3vh;
+    align-items: center;
+}
+
+.programa .pasos p:first-child{
+    font-size: 1.5rem;
+    background-color: #5D3A1A;
+    color: white;
+    width: 5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.programa .pasos p:last-child{
+    grid-column: 1/3;
+    padding-left: 3vw;
+    border-left: #5D3A1A solid 2px;
+    height: fit-content;
+    margin-left: 2vw;
+
+}
+
+.voluntariado {
+    background-color: #F5F1EA;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 45vh;
+}
+
+.voluntariado  h2{
+    font-size: 2.5em;
+    margin: 2vh 0;
+}
+
+.voluntariado article{
+    width: 30vw;
+}
+
+.voluntariado article p:nth-last-child(2){
+    margin-top: 3vh;
+}
+
+.voluntariado img{
+    height: 35vh;
+    border-radius: 20px;
+}
