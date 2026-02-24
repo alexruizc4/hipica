@@ -1,5 +1,5 @@
 .intro{
-    height: 40vh;
+    min-height: 40vh;
     display: flex;
     background-color: #F3E8D8;
     justify-content: space-around;
@@ -183,4 +183,113 @@
 .horario-card li {
     margin-bottom: 0.5rem;
     font-weight: 600;
+}
+
+
+
+@media (max-width: 1024px) {
+    .individual {
+        grid-template-columns: 1fr; 
+        width: 95vw;
+    }
+
+    .individual img {
+        grid-column: 1 / -1; 
+        height: auto;
+        max-height: 40vh;
+        margin-top: 2vh;
+    }
+
+    .clases article {
+        width: 45vw; 
+        margin-bottom: 4vh;
+    }
+
+    .clases {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .formaciones-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .intro {
+        flex-direction: column;
+        padding: 5vh 5vw;
+        text-align: center;
+    }
+
+    .intro img {
+        height: auto;
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 3vh;
+    }
+
+    .intro article {
+        width: 100%; 
+    }
+
+
+    .individual h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .individual ul {
+        padding-left: 20px; 
+    }
+
+
+    .clases {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clases article {
+        width: 90vw;
+        margin-bottom: 6vh;
+    }
+
+    .clases article img {
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+
+    .formaciones-grid {
+        grid-template-columns: 1fr; 
+        width: 95vw;
+    }
+
+    .card img {
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .formaciones h2, .horario h2 {
+        font-size: 1.6rem;
+    }
+
+    .horario-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .horario-card {
+        padding: 1.5rem;
+    }
+
+    .intro article p, .individual p {
+        margin: 1.5vh 0;
+        font-size: 0.95rem;
+    }
 }

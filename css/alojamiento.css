@@ -1,0 +1,455 @@
+.inicio{
+    display: grid;
+    grid-template-areas: "unico";
+    height: 90vh;
+    width: 100vw;
+    justify-items: center;
+}
+
+.inicio > * {
+    grid-area: unico;
+}
+
+.inicio img{
+    z-index: 1;
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.inicio div{
+    z-index: 2;
+    background-color: black;
+    opacity: 0.6;
+    height: 90vh;
+    width: 100vw;
+}
+
+.inicio article{
+    display: grid;
+    z-index: 3;
+    align-self: center;   
+    color: white;
+    justify-items: center;
+    width: fit-content;
+}
+
+.inicio article p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.inicio article .info{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    margin: 1vh;
+}
+
+
+.inicio article h1{
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.inform{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh auto;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+
+em{
+    color: #5D3A1A;
+}
+
+.inform h2{
+    margin-bottom: 2vh;
+    font-size: 2em;
+}
+
+.inform p{
+    margin: 1vh auto;
+    text-align: center;
+}
+
+
+.img{
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img .principal{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.img .principal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    z-index: 10;
+}
+
+.img button:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.img .principal button.prev{left: 15px;}
+.img .principal button.next{right: 15px;}
+
+.img .lista{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    overflow-x: auto; 
+    padding-bottom: 10px;
+}
+
+.img .lista img{
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.img .lista img:hover {
+    opacity: 0.8;
+}
+
+
+.img .lista img.active {
+    opacity: 1;
+    border-color: #333;
+}
+
+.lug {
+    background-color: #F3E8D8;
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    width: 100vw; 
+    margin: 5vh auto;
+    padding: 5vh 15vw;
+    gap: 2rem;
+    color: #111;
+}
+
+.lug h2 {
+    font-size: 2.5em;
+    text-align: center;
+    grid-column: 1 / -1; 
+    margin-bottom: 1rem;
+}
+
+.lug .castillo {
+    grid-column: 1 / -1;
+    display: flex; 
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    overflow: hidden; 
+    min-height: 500px;
+}
+
+.lug .castillo::before {
+    content: "";
+    flex: 1; 
+    background-image: url('../media/alojamiento/castilloalmodovar.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.lug .castillo > div {
+    flex: 1; 
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lug i.icon-sobre {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.lug .castillo h4 {
+    font-size: 1.8em;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.fino {
+    font-weight: 300;
+    color: #666;
+}
+
+.lug .castillo p.fino {
+    margin-bottom: 2rem;
+}
+
+.lug .castillo p:not(.fino) {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.lug .tri {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.lug .tri h4 {
+    font-size: 1.2em;
+    margin: 0;
+    min-height: 2.8em; 
+}
+
+.lug .tri p.fino {
+    margin: 0.5rem 0;
+    font-size: 0.9em;
+}
+
+.lug .tri p:not(.fino) {
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+    font-size: 0.95em;
+}
+
+.ubicacion {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.ubicacion h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.grid-ciudades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.grid-transporte {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-blanca, .card-beige {
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.card-blanca {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+}
+
+.card-beige {
+    background-color: #F3E8D8; 
+}
+
+.icon-marcador {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.icon-circle {
+    background: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.card-blanca h3, .card-beige h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.card-blanca p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.card-beige p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.mapa-contenedor {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.mapa-contenedor iframe {
+    width: 100%;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 1024px) {
+    .img {
+        max-width: 95%;
+    }
+
+    .lug {
+        padding: 5vh 5vw;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .grid-ciudades {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .inicio, .inicio img, .inicio div {
+        height: 70vh;
+    }
+
+    .inicio article h1 {
+        font-size: 3rem;
+        margin-bottom: 5vh;
+    }
+
+    .lug .castillo {
+        flex-direction: column; 
+        min-height: auto;
+    }
+
+    .lug .castillo::before {
+        height: 300px; 
+        flex: none;
+        width: 100%;
+    }
+
+    .lug .castillo > div {
+        padding: 2rem;
+    }
+
+    .lug .tri {
+        grid-column: span 2; 
+        width: 100%;
+    }
+
+    .inform {
+        width: 90vw;
+    }
+
+    .grid-transporte {
+        grid-template-columns: 1fr; 
+    }
+    .mapa-contenedor iframe {
+        height: 300px; 
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .inicio article h1 {
+        font-size: 2.2rem;
+    }
+    
+    .inicio article p {
+        font-size: 1.1rem;
+    }
+
+
+    .lug {
+        grid-template-columns: 1fr;
+        padding: 5vh 20px;
+    }
+
+    .lug .tri {
+        grid-column: 1 / -1;
+    }
+
+    .grid-ciudades {
+        grid-template-columns: 1fr; 
+    }
+
+    .img .lista img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .img button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
