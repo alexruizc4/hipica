@@ -175,7 +175,6 @@ em{
     background-color: #fff;
 }
 
-/* Configuración general */
 .vet {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 

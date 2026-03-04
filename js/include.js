@@ -15,3 +15,5 @@ function load(id, file) {
 
 load("header", "partials/header.html");
 load("footer", "partials/footer.html");
+load("boton", "partials/boton.html");
+
