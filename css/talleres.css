@@ -1,0 +1,496 @@
+.inicio {
+    display: grid;
+    grid-template-areas: "unico";
+    height: 90vh;
+    height: 90dvh; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.inicio > * {
+    grid-area: unico;
+}
+
+.inicio img {
+    z-index: 1;
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.inicio div {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 90vh;
+}
+
+.inicio article {
+    z-index: 3;
+    place-self: center; 
+    color: white;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio article h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem); 
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.inicio article p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.talleres-section {
+    background-color: #ece8e1;
+    padding: 60px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .talleres-section .subtitle-top {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: #7c6a56;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  
+  .talleres-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: #2c1e0f;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  
+  .talleres-section .tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #8b7355;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  
+  .talleres-section .divider {
+    width: 40px;
+    height: 1px;
+    background-color: #b8a48a;
+    margin: 0 auto 52px;
+  }
+  
+  .talleres-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .taller-card {
+    border-radius: 16px;
+    padding: 28px 26px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .taller-card--yellow { background-color: #fdf8ee; }
+  .taller-card--green  { background-color: #eef8f4; }
+  .taller-card--blue   { background-color: #eef4fb; }
+  
+  .taller-badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 3px 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    width: fit-content;
+  }
+  
+  .taller-badge--yellow { background-color: #f5e0a0; color: #7a5c1e; }
+  .taller-badge--green  { background-color: #b2e4d0; color: #1f6650; }
+  .taller-badge--blue   { background-color: #c0d9f0; color: #1e4d7a; }
+  
+  .taller-card__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2c1e0f;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  
+  .taller-card__date {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #8b7355;
+    font-weight: 400;
+    margin-bottom: 22px;
+  }
+  
+  .taller-card__prices {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .taller-btn {
+    flex: 1;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.35;
+    cursor: default;
+  }
+  
+  .taller-btn--dark {
+    background-color: #3b2008;
+    color: #fff;
+  }
+  
+  .taller-btn--light {
+    background-color: #fff;
+    color: #3b2008;
+    border: 1px solid #d9cfc4;
+  }
+  
+  .taller-card__schedule {
+    font-family: 'Lato', sans-serif;
+    font-size: 11.5px;
+    color: #8b7355;
+    margin-bottom: 18px;
+    line-height: 1.4;
+  }
+  
+  .taller-card__activities-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #3b2e1e;
+    margin-bottom: 10px;
+  }
+  
+  .taller-card__activities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  
+  .taller-card__activities li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #5a4a38;
+    line-height: 1.35;
+  }
+  
+  .taller-card__activities li::before {
+    content: '✓';
+    color: #8b7355;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+
+.actividades-section {
+    background-color: #ece8e1;
+    padding: 70px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .actividades-section .actividades-subtitle-top {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: #7c6a56;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .actividades-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #2c1e0f;
+    text-align: center;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  
+  .actividades-section .actividades-divider {
+    width: 40px;
+    height: 1px;
+    background-color: #b8a48a;
+    margin: 0 auto 48px;
+  }
+  
+  .actividades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    width: 100%;
+  }
+  
+  .actividad-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px 22px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+  
+  .actividad-card__icon {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  
+  .actividad-card__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b8860b;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  
+  .actividad-card__desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    color: #7c6a56;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+  
+
+.info-section {
+    background-color: #faf9f6;
+    padding: 80px 20px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-section .info-subtitle-top {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: #7c6a56;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .info-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #2c1e0f;
+    text-align: center;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  
+  .info-section .info-divider {
+    width: 40px;
+    height: 1px;
+    background-color: #b8a48a;
+    margin: 0 auto 56px;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1060px;
+    width: 100%;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .info-item__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #f0ece5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+  }
+  
+  .info-item__icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: #7c6a56;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .info-item__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #2c1e0f;
+    margin-bottom: 4px;
+  }
+  
+  .info-item__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #b8860b;
+    margin-bottom: 12px;
+  }
+  
+  .info-item__desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #7c6a56;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+@media (max-width: 1024px) {
+
+    .inicio article h1 { font-size: clamp(2rem, 6vw, 3.5rem); }
+  
+    .talleres-section h2 { font-size: 42px; }
+    .talleres-grid {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 700px;
+    }
+    .talleres-grid > .taller-card:nth-child(3) {
+      grid-column: 1 / -1;
+      max-width: 340px;
+      justify-self: center;
+    }
+  
+    .actividades-section h2 { font-size: 42px; }
+    .actividades-grid { grid-template-columns: repeat(4, 1fr); }
+  
+    .info-section h2 { font-size: 42px; }
+    .info-grid { gap: 20px; }
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    .inicio { height: 70vh; height: 70dvh; }
+    .inicio img,
+    .inicio div { height: 70vh; }
+    .inicio article p { font-size: clamp(0.9rem, 3vw, 1.2rem); }
+  
+    .talleres-section { padding: 50px 16px 60px; }
+    .talleres-section h2 { font-size: 34px; }
+    .talleres-section .tagline { font-size: 16px; }
+    .talleres-grid {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+    }
+    .talleres-grid > .taller-card:nth-child(3) {
+      grid-column: auto;
+      max-width: 100%;
+      justify-self: stretch;
+    }
+  
+    .actividades-section { padding: 50px 16px 60px; }
+    .actividades-section h2 { font-size: 34px; }
+    .actividades-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    .info-section { padding: 60px 16px 70px; }
+    .info-section h2 { font-size: 34px; }
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px 24px;
+    }
+  }
+  
+  
+  @media (max-width: 640px) {
+  
+    .inicio { height: 60vh; height: 60dvh; }
+    .inicio img,
+    .inicio div { height: 60vh; }
+  
+    .talleres-section { padding: 40px 14px 50px; }
+    .talleres-section h2 { font-size: 28px; }
+    .talleres-section .tagline { font-size: 15px; }
+    .talleres-section .divider { margin-bottom: 36px; }
+    .talleres-grid { max-width: 100%; }
+    .taller-card { padding: 22px 18px 24px; }
+    .taller-card__title { font-size: 24px; }
+    .taller-btn { font-size: 13px; padding: 12px 8px; }
+  
+    .actividades-section { padding: 40px 14px 50px; }
+    .actividades-section h2 { font-size: 28px; }
+    .actividades-section .actividades-divider { margin-bottom: 32px; }
+    .actividades-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .actividad-card { padding: 24px 14px 20px; }
+    .actividad-card__icon { font-size: 32px; margin-bottom: 12px; }
+    .actividad-card__title { font-size: 13px; }
+    .actividad-card__desc { font-size: 12px; }
+  
+    .info-section { padding: 44px 14px 54px; }
+    .info-section h2 { font-size: 28px; }
+    .info-section .info-divider { margin-bottom: 40px; }
+    .info-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+    .info-item__icon { width: 48px; height: 48px; }
+    .info-item__icon svg { width: 20px; height: 20px; }
+    .info-item__title { font-size: 14px; }
+    .info-item__desc { font-size: 12.5px; }
+  }
