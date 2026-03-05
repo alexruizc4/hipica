@@ -300,7 +300,7 @@ html {
   z-index: 1;
 }
 
-.disponibilidad article.linea .icon-corazon {
+.disponibilidad article.linea i {
   font-size: 1rem;
   color: #d9b99a;
 }
@@ -381,7 +381,7 @@ html {
   transform: translateY(-3px);
 }
 
-.tall article:not(.texto) .icon-corazon {
+.tall article:not(.texto) i {
   font-size: 1.8rem;
   display: block;
   margin-bottom: 4px;
@@ -464,7 +464,7 @@ html {
   color: #c9a07a;
 }
 
-.tall article.activo .icon-corazon {
+.tall article.activo i {
   filter: brightness(10);
 }
 
@@ -491,7 +491,7 @@ html {
   box-sizing: border-box;
 }
 
-.foto article .icon-corazon {
+.foto article i {
   grid-column: 1;
   grid-row: 1 / 4;
   font-size: 3.2rem;
